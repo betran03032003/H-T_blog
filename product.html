@@ -1,0 +1,2122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Logo -->
+    <link rel="android-chrome-512x512" sizes="512x512" href="./assets/img/Logo/android-chrome-512x512.png">
+    <link rel="android-chrome-192x192" sizes="192x192" href="./assets/img/Logo/android-chrome-192x192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/Logo/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/Logo/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/Logo/favicon-16x16.png">
+    <link rel="manifest" href="./assets/img/Logo/site.webmanifest">
+
+    <title>Product</title>
+
+    <!-- Link css -->
+    <link rel="stylesheet" href="./assets/css/base.css" class="">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css" class="">
+    <link rel="stylesheet" href="./assets/css/login.css">
+    <link rel="stylesheet" href="./assets/css/globe.css" class="">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+    <!-- Link font -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link js -->
+    <script src="https://use.typekit.net/hoy3lrg.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://use.fontawesome.com/15af25ac7b.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.1/jquery.jcarousel.min.js"></script>
+
+    <style class="">
+        body {
+            background-color: var(--third-color);
+            display: grid;
+            font-size: .6vmin;
+        }
+
+        h1 {
+            font-size: 30px;
+        }
+
+        h2 {
+            margin-top: 50px;
+        }
+
+        .globe {
+            display: flex;
+            margin: 0 10px;
+        }
+
+        .source {
+            width: 41.66667%;
+        }
+
+        .source-product_html,
+        .source-product-css {
+            height: 300px;
+            background: var(--white-color);
+            overflow-y: scroll;
+            border-bottom: 1px solid black;
+            margin:10px 0 0 0;
+        }
+
+        .play-product {
+            width: 58.33333%;
+            margin-top: 20px;
+        }
+
+        .product_name {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--white-color);
+            text-align: center;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Nav -->
+        <div class="nav container">
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <img src="./assets/img/Logo//logo.png" alt="" class="logo-img">
+                H<span>&T</span>
+            </a>
+            <!-- Menu -->
+            <ul class="menu">
+                <i class='bx bx-x-circle'></i>
+                <li class="menu-item"><a href="index.html">Home</a></li>
+                <li class="menu-item"><a href="about.html">About</a></li>
+                <li class="menu-item"><a href="university.html">University</a></li>
+                <li class="menu-item"><a href="subject.html">Subject</a>
+                    <ul class="subject">
+                        <li class="subject-item"><a href="music.html">Musics</a></li>
+                        <li class="subject-item"><a href="movie.html">Movies</a></li>
+                        <li class="subject-item"><a href="book.html">Books</a></li>
+                        <li class="subject-item"><a href="game.html">Games</a></li>
+                        <li class="subject-item"><a href="artist.html">Artist</a></li>
+                        <li class="subject-item"><a href="pet.html">Pet</a></li>
+                        <li class="subject-item"><a href="learn.html">Learn</a></li>
+                        <li class="subject-item"><a href="product.html">Products</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item"><a href="contact.html">Contact</a></li>
+            </ul>
+            <!-- Find -->
+            <form action="" id="search-box">
+                <input type="text" id="search-text" placeholder="Search ..." required>
+                <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <!-- Login Btn-->
+            <div class="login-btn">
+                <button class="login" onclick="openForm()">Login</button>
+            </div>
+            <div class="user-avt">
+                <img src="" alt="" class="avatar">
+                <div class="log-out">
+                    Đăng xuất
+                </div>
+            </div>
+            <i class='bx bx-menu'></i>
+        </div>
+    </header>
+    <!--  Home  -->
+    <section class="home" id="home">
+        <div class="home-text container">
+            <h2 class="home-title">H&T Blog</h2>
+            <span class="home-subtitle">Product page_Where we collect and present technology products.</span>
+        </div>
+    </section>
+    <!-- Magic globe-->
+    <h2 class="product_name">Magic globe</h2>
+    <section class="globe">
+        <div class="source">
+            <div class="source-product_html">
+            <h1>HTML</h1>
+                    <xmp style="font-size: 13px;">
+    <input type="checkbox" name="start" id="start">
+    <input type="checkbox" name="playPause" id="playPause">
+
+    <input type="radio" name="patterns" id="grid">
+    <input type="radio" name="patterns" id="chess" checked>
+
+    <input type="checkbox" name="backFace" id="backFace" checked>
+    <input type="checkbox" name="ghost" id="ghost">
+
+    <div class="scene">
+        <div class="pivot">
+            <div class="sphere">
+                <div class="slice">
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                </div>
+                <div class="slice">
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                </div>
+                <div class="slice">
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                </div>
+                <div class="slice">
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                </div>
+                <div class="slice">
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                </div>
+                <div class="slice">
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                </div>
+                <div class="slice">
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                </div>
+                <div class="slice">
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                </div>
+                <div class="slice">
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                </div>
+                <div class="slice">
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                </div>
+                <div class="slice">
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                </div>
+                <div class="slice">
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                </div>
+                <div class="slice">
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                </div>
+                <div class="slice">
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                </div>
+                <div class="slice">
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                </div>
+                <div class="slice">
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                </div>
+                <div class="slice">
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                </div>
+                <div class="slice">
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                </div>
+                <div class="slice">
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                </div>
+                <div class="slice">
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                </div>
+                <div class="slice">
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                </div>
+                <div class="slice">
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                </div>
+                <div class="slice">
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                </div>
+                <div class="slice">
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                </div>
+                <div class="slice">
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                </div>
+                <div class="slice">
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                </div>
+                <div class="slice">
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                </div>
+                <div class="slice">
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                </div>
+                <div class="slice">
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                </div>
+                <div class="slice">
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                </div>
+                <div class="slice">
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                </div>
+                <div class="slice">
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                    <div class="facet"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav id="patterns">
+        <label for="grid" title="globe with meridians & parallells">
+
+        </label>
+        <label for="chess" title="checkerboard pattern"></label>
+    </nav>
+
+    <nav id="fills">
+        <label for="backFace" title="Hide/show backfacey"></label>
+        <label for="ghost" title="Semi-transparency"></label>
+    </nav>
+
+    <label class="startBtn" for="start" title="Press to start spinning the globe">
+
+    </label>
+    <label class="playBtn" for="playPause" title="Start/pause the animation">
+    </label>
+                    </xmp>
+            </div>
+            <div class="source-product-css">
+            <h1>CSS</h1>
+                <xmp style="font-size: 13px;">
+    /* Magic globe */
+    .scene {
+    width: 90px;
+    aspect-ratio: 1;
+    place-self: center;
+    perspective: 500em;
+    perspective-origin: 25% 25%;
+    margin-top: 180px;
+    margin-left: 420px;
+    margin-right: 0;
+    }
+
+    body * {
+    transform-style: preserve-3d;
+    }
+
+    .scene,
+    .scene *,
+    .scene *::before,
+    .scene *::after {
+    position: absolute;
+    }
+
+    .pivot,
+    .sphere,
+    .slice {
+    inset: 0;
+    }
+
+    .pivot {
+    animation: wobble 12s ease-in-out alternate infinite;
+    }
+
+    @keyframes wobble {
+    0% {
+    rotate: x -45deg;
+    }
+
+    100% {
+    rotate: x 45deg;
+    }
+    }
+
+    .sphere {
+    display: grid;
+    animation: spin 10s linear infinite;
+    }
+
+    @keyframes spin {
+    100% {
+    rotate: y 360deg;
+    }
+    }
+
+    .slice {
+    --ngon: 32;
+    --angle: calc(360deg/var(--ngon));
+    transform: rotateY(calc(var(--angle)*var(--sliceStep))) 
+    scaleX(calc(cos(var(--angle)/2)));
+    display: grid;
+    place-items: center;
+    }
+
+    .facet {
+    width: calc(100em*sin(var(--angle)/2));
+    aspect-ratio: 1;
+    --ptAngle: calc(atan((sin(var(--angle)*(var(--ptStep) + 1)) - 
+    sin(var(--angle)*var(--ptStep)))/2));
+    --peak: calc(-100% * sin(var(--angle)*(var(--facetStep) + 1))/
+    (sin(var(--angle)*(var(--facetStep) +
+    1)) - sin(var(--angle)*var(--facetStep))) + 100%);
+    --clr3: hsl(calc(360deg - 10deg/(var(--ngon)/2)*var(--facetStep))
+     100% calc(50% +
+    38%/(var(--ngon)/2)*var(--facetStep)));
+    --clr4: hsl(calc(360deg - 10deg/(var(--ngon)/2)*(var(--facetStep)
+     + 1)) 100% calc(50% +
+    38%/(var(--ngon)/2)*(var(--facetStep) + 1)));
+    background-image: linear-gradient(var(--clr3), var(--clr4)),
+     conic-gradient(from calc(90deg*(1 +
+    var(--dir)) - 1*var(--ptAngle)) at 50% var(--peak), 
+    var(--clr1), var(--clr2) calc(2*var(--ptAngle)),
+    transparent 0);
+    background-blend-mode: difference;
+    -webkit-mask-image: conic-gradient(from calc(90deg*(1 + var(--dir))
+     - 1*var(--ptAngle)) at 50%
+    var(--peak), black calc(2*var(--ptAngle)), transparent 0);
+    mask-image: conic-gradient(from calc(90deg*(1 + var(--dir))
+     - 1*var(--ptAngle)) at 50% var(--peak),
+    black calc(2*var(--ptAngle)), transparent 0);
+    --pushZ: 52em;
+    transform: rotate(calc(90deg + var(--angle)*(.5 + var(--facetStep))))
+    translateX(calc(var(--pushZ)*cos(var(--angle)/2))) 
+    rotateY(calc(90deg));
+    --dir: 1;
+    padding-inline: 5px;
+    }
+
+    .facet:nth-child(n+9) {
+    --dir: -1;
+    }
+
+    .slice:nth-child(n-17) .facet:nth-child(n+9),
+    .slice:nth-child(n+17) .facet:nth-child(n-9) {
+    --clr1: hsl(calc(60deg + 120deg/var(--ngon)*(var(--gradStep) + 1))
+     100% calc(50% -
+    23%/var(--ngon)*(var(--gradStep) + 1)));
+    --clr2: hsl(calc(60deg + 120deg/var(--ngon)*var(--gradStep)) 
+    100% calc(50% -
+    23%/var(--ngon)*var(--gradStep)));
+    }
+
+    :where(.facet),
+    .slice:nth-child(n+17) .facet:nth-child(n+9) {
+    --clr2: hsl(calc(60deg + 120deg/var(--ngon)*(var(--gradStep) + 1))
+     100% calc(50% -
+    23%/var(--ngon)*(var(--gradStep) + 1)));
+    --clr1: hsl(calc(60deg + 120deg/var(--ngon)*var(--gradStep)) 100% 
+    calc(50% -
+    23%/var(--ngon)*var(--gradStep)));
+    }
+
+    /* NAVIGATION/SETTINGS */
+
+    input {
+    display: none;
+    }
+
+    .startBtn {
+    position: absolute;
+    width: max(10em, 50px);
+    aspect-ratio: 1;
+    z-index: 1;
+    place-self: center;
+    --gradAngle: calc(90deg + atan(.5));
+    background-image: linear-gradient(var(--gradAngle), red, pink), 
+    conic-gradient(from 90deg at 50%
+    50%, green, yellow 135deg, green 0, yellow 225deg, green 0, yellow);
+    background-blend-mode: difference;
+    -webkit-mask-image: conic-gradient(from calc(270deg - atan(.5))
+     at 100% 50%, var(--bg-color)
+    calc(2*atan(.5)), transparent 0);
+    mask-image: conic-gradient(from calc(270deg - atan(.5)) at
+     100% 50%, var(--bg-color)
+    calc(2*atan(.5)), transparent 0);
+    transform-origin: 50% 50% 68em;
+    transition: all 2s ease-in;
+    backface-visibility: hidden;
+    margin-top: -230px;
+    margin-left: 100px;
+    }
+
+    .playBtn {
+    position: absolute;
+    width: max(10em, 50px);
+    aspect-ratio: 1;
+    margin: max(5em, 30px);
+    background-image: linear-gradient(pink, red), 
+    linear-gradient(90deg, yellow, green);
+    background-blend-mode: difference;
+    align-self: start;
+    overflow: hidden;
+    margin-top: -230px;
+    margin-left: 100px;
+    }
+
+    .playBtn::before,
+    .playBtn::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    transition: all .5s ease-in-out;
+    }
+
+    .playBtn::before {
+    background-image: conic-gradient(from calc(270deg
+     + atan(.5)), var(--bg-color) calc(360deg -
+    2*atan(.5)), transparent 0);
+    background-size: 200% 100%;
+    transform-origin: 0 50%;
+    scale: 10 1;
+    }
+
+    .playBtn::after {
+    background-image: conic-gradient(from calc(180deg 
+    - atan(.15)) at 50% 0, var(--bg-color)
+    calc(2*atan(.15)), transparent 0);
+    transform-origin: 50% 100%;
+    scale: 1 10;
+    }
+
+    nav {
+    width: max(50em, 100px);
+    aspect-ratio: 1;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 100px;
+    gap: max(3em, 20px);
+    }
+
+    nav label {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    }
+
+    nav label,
+    .playBtn {
+    transform-origin: 0 0;
+    transition: scale .3s ease-in-out;
+    }
+
+    :is(nav label, .playBtn):hover {
+    scale: 1.2;
+    }
+
+    nav label::before,
+    nav label::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    }
+
+    nav label::before {
+    background-image: linear-gradient(yellow, green),
+     linear-gradient(90deg, pink, red);
+    background-blend-mode: difference;
+    mix-blend-mode: darken;
+    border-radius: 50%;
+    transition: filter .3s ease-in-out;
+    }
+
+    #patterns {
+    scale: -1 1;
+    justify-self: end;
+    }
+
+    #patterns label:nth-child(1) {
+    background-image:
+    radial-gradient(transparent 67%, black 0 75%, transparent 0),
+    radial-gradient(transparent 60%, black 0 75%, transparent 0),
+    linear-gradient(transparent 22%, black 0 27%, transparent 0 47%,
+     black 0 52%, transparent 0 72%,
+    black 0 77%, transparent 0);
+    background-size: 75% 100%, 33% 100%, 100% 100%;
+    }
+
+    #patterns label:nth-child(2) {
+    background-image:
+    linear-gradient(#fff 20%, #000 0 40%, #fff 0 60%, #000 0 80%, #fff 0 100%),
+    radial-gradient(#fff 71%, transparent 0),
+    radial-gradient(#000 71%, transparent 0),
+    radial-gradient(#fff 71%, transparent 0),
+    radial-gradient(#000 71%, transparent 0);
+    background-size:
+    100% 100%,
+    23% 100%,
+    40% 100%,
+    62% 100%,
+    85% 100%;
+    background-blend-mode: difference;
+    box-shadow: inset 0 0 0 2px white;
+    }
+
+    #patterns label:nth-child(3) {
+    background-image:
+    radial-gradient(#fff 71%, transparent 0),
+    radial-gradient(black 71%, transparent 0),
+    radial-gradient(#fff 71%, transparent 0),
+    radial-gradient(black 71%, transparent 0);
+    background-size: 10% 100%, 32.5% 100%, 55% 100%, 77.5% 100%;
+    }
+
+    #fills {
+    place-self: end;
+    scale: -1 -1;
+    margin-top: -100px;
+    }
+
+    #fills label:nth-child(1)::after {
+    background-image: conic-gradient(from 90deg at 70% 25%,
+     black 20deg, transparent 0),
+    radial-gradient(at 80% 60%, black 5%, transparent 0);
+    }
+
+    #fills label:nth-child(2)::after {
+    background-image: repeating-conic-gradient(black 0 20deg,
+     transparent 20deg 40deg),
+    radial-gradient(black 60%, transparent 0);
+    }
+
+
+    /* toggles */
+
+    #start:not(:checked)~.scene :is(.pivot, .sphere),
+    #playPause:checked~.scene :is(.pivot, .sphere) {
+    animation-play-state: paused;
+    }
+
+    #start:checked~.startBtn {
+    rotate: y -180deg;
+    pointer-events: none;
+    }
+
+    #start:not(:checked)~.playBtn {
+    pointer-events: none;
+    }
+
+    #start:not(:checked)~.playBtn::before {
+    background-position-x: 100%;
+    }
+
+    #playPause:checked~.playBtn::before {
+    scale: 1 1;
+    }
+
+    #playPause:checked~.playBtn::after {
+    scale: 1 0;
+    }
+
+    #chess:checked~.scene :is(.slice:nth-child(2n) .facet:nth-child(odd),
+     .slice:nth-child(odd)
+    .facet:nth-child(2n)) {
+    display: none;
+    }
+
+    #grid:checked~.scene .facet {
+    --pushZ: 52em;
+    }
+
+    #backFace:checked~.scene .facet {
+    backface-visibility: hidden;
+    }
+
+    #ghost:checked~.scene .facet {
+    opacity: .5;
+    }
+
+    #grid:not(:checked)~#patterns label:nth-child(1),
+    #chess:not(:checked)~#patterns label:nth-child(2),
+    #backFace:checked~#fills label:nth-child(1),
+    #ghost:not(:checked)~#fills label:nth-child(2) {
+    filter: contrast(1.5) grayscale();
+    }
+
+    /* iterations */
+
+    .slice:nth-child(1) {
+    --sliceStep: 0;
+    }
+
+    .slice:nth-child(2) {
+    --sliceStep: 1;
+    }
+
+    .slice:nth-child(3) {
+    --sliceStep: 2;
+    }
+
+    .slice:nth-child(4) {
+    --sliceStep: 3;
+    }
+
+    .slice:nth-child(5) {
+    --sliceStep: 4;
+    }
+
+    .slice:nth-child(6) {
+    --sliceStep: 5;
+    }
+
+    .slice:nth-child(7) {
+    --sliceStep: 6;
+    }
+
+    .slice:nth-child(8) {
+    --sliceStep: 7;
+    }
+
+    .slice:nth-child(9) {
+    --sliceStep: 8;
+    }
+
+    .slice:nth-child(10) {
+    --sliceStep: 9;
+    }
+
+    .slice:nth-child(11) {
+    --sliceStep: 10;
+    }
+
+    .slice:nth-child(12) {
+    --sliceStep: 11;
+    }
+
+    .slice:nth-child(13) {
+    --sliceStep: 12;
+    }
+
+    .slice:nth-child(14) {
+    --sliceStep: 13;
+    }
+
+    .slice:nth-child(15) {
+    --sliceStep: 14;
+    }
+
+    .slice:nth-child(16) {
+    --sliceStep: 15;
+    }
+
+    .slice:nth-child(17) {
+    --sliceStep: 16;
+    }
+
+    .slice:nth-child(18) {
+    --sliceStep: 17;
+    }
+
+    .slice:nth-child(19) {
+    --sliceStep: 18;
+    }
+
+    .slice:nth-child(20) {
+    --sliceStep: 19;
+    }
+
+    .slice:nth-child(21) {
+    --sliceStep: 20;
+    }
+
+    .slice:nth-child(22) {
+    --sliceStep: 21;
+    }
+
+    .slice:nth-child(23) {
+    --sliceStep: 22;
+    }
+
+    .slice:nth-child(24) {
+    --sliceStep: 23;
+    }
+
+    .slice:nth-child(25) {
+    --sliceStep: 24;
+    }
+
+    .slice:nth-child(26) {
+    --sliceStep: 25;
+    }
+
+    .slice:nth-child(27) {
+    --sliceStep: 26;
+    }
+
+    .slice:nth-child(28) {
+    --sliceStep: 27;
+    }
+
+    .slice:nth-child(29) {
+    --sliceStep: 28;
+    }
+
+    .slice:nth-child(30) {
+    --sliceStep: 29;
+    }
+
+    .slice:nth-child(31) {
+    --sliceStep: 30;
+    }
+
+    .slice:nth-child(32) {
+    --sliceStep: 31;
+    }
+
+    /* this switches the incrementation and goes backwards at the midpoint */
+
+    .slice:nth-child(1),
+    .slice:nth-last-child(1) {
+    --gradStep: 0;
+    }
+
+    .slice:nth-child(2),
+    .slice:nth-last-child(2) {
+    --gradStep: 1;
+    }
+
+    .slice:nth-child(3),
+    .slice:nth-last-child(3) {
+    --gradStep: 2;
+    }
+
+    .slice:nth-child(4),
+    .slice:nth-last-child(4) {
+    --gradStep: 3;
+    }
+
+    .slice:nth-child(5),
+    .slice:nth-last-child(5) {
+    --gradStep: 4;
+    }
+
+    .slice:nth-child(6),
+    .slice:nth-last-child(6) {
+    --gradStep: 5;
+    }
+
+    .slice:nth-child(7),
+    .slice:nth-last-child(7) {
+    --gradStep: 6;
+    }
+
+    .slice:nth-child(8),
+    .slice:nth-last-child(8) {
+    --gradStep: 7;
+    }
+
+    .slice:nth-child(9),
+    .slice:nth-last-child(9) {
+    --gradStep: 8;
+    }
+
+    .slice:nth-child(10),
+    .slice:nth-last-child(10) {
+    --gradStep: 9;
+    }
+
+    .slice:nth-child(11),
+    .slice:nth-last-child(11) {
+    --gradStep: 10;
+    }
+
+    .slice:nth-child(12),
+    .slice:nth-last-child(12) {
+    --gradStep: 11;
+    }
+
+    .slice:nth-child(13),
+    .slice:nth-last-child(13) {
+    --gradStep: 12;
+    }
+
+    .slice:nth-child(14),
+    .slice:nth-last-child(14) {
+    --gradStep: 13;
+    }
+
+    .slice:nth-child(15),
+    .slice:nth-last-child(15) {
+    --gradStep: 14;
+    }
+
+    .slice:nth-child(16),
+    .slice:nth-last-child(16) {
+    --gradStep: 15;
+    }
+
+    /* incrementing the facet's step variable */
+
+    .facet:nth-child(1) {
+    --facetStep: 0;
+    }
+
+    .facet:nth-child(2) {
+    --facetStep: 1;
+    }
+
+    .facet:nth-child(3) {
+    --facetStep: 2;
+    }
+
+    .facet:nth-child(4) {
+    --facetStep: 3;
+    }
+
+    .facet:nth-child(5) {
+    --facetStep: 4;
+    }
+
+    .facet:nth-child(6) {
+    --facetStep: 5;
+    }
+
+    .facet:nth-child(7) {
+    --facetStep: 6;
+    }
+
+    .facet:nth-child(8) {
+    --facetStep: 7;
+    }
+
+    .facet:nth-child(9) {
+    --facetStep: 8;
+    }
+
+    .facet:nth-child(10) {
+    --facetStep: 9;
+    }
+
+    .facet:nth-child(11) {
+    --facetStep: 10;
+    }
+
+    .facet:nth-child(12) {
+    --facetStep: 11;
+    }
+
+    .facet:nth-child(13) {
+    --facetStep: 12;
+    }
+
+    .facet:nth-child(14) {
+    --facetStep: 13;
+    }
+
+    .facet:nth-child(15) {
+    --facetStep: 14;
+    }
+
+    .facet:nth-child(16) {
+    --facetStep: 15;
+    }
+
+    /* this switches the incrementation and goes backwards at the midpoint */
+
+    .facet:nth-child(1),
+    .facet:nth-last-child(1) {
+    --ptStep: 0;
+    }
+
+    .facet:nth-child(2),
+    .facet:nth-last-child(2) {
+    --ptStep: 1;
+    }
+
+    .facet:nth-child(3),
+    .facet:nth-last-child(3) {
+    --ptStep: 2;
+    }
+
+    .facet:nth-child(4),
+    .facet:nth-last-child(4) {
+    --ptStep: 3;
+    }
+
+    .facet:nth-child(5),
+    .facet:nth-last-child(5) {
+    --ptStep: 4;
+    }
+
+    .facet:nth-child(6),
+    .facet:nth-last-child(6) {
+    --ptStep: 5;
+    }
+
+    .facet:nth-child(7),
+    .facet:nth-last-child(7) {
+    --ptStep: 6;
+    }
+
+    .facet:nth-child(8),
+    .facet:nth-last-child(8) {
+    --ptStep: 7;
+    }
+                </xmp>
+            </div>
+        </div>
+        <div class="play-product">
+            <input type="checkbox" name="start" id="start">
+            <input type="checkbox" name="playPause" id="playPause">
+
+            <input type="radio" name="patterns" id="grid">
+            <input type="radio" name="patterns" id="chess" checked>
+
+            <input type="checkbox" name="backFace" id="backFace" checked>
+            <input type="checkbox" name="ghost" id="ghost">
+
+            <div class="scene">
+                <div class="pivot">
+                    <div class="sphere">
+                        <div class="slice">
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                        </div>
+                        <div class="slice">
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                        </div>
+                        <div class="slice">
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                        </div>
+                        <div class="slice">
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                        </div>
+                        <div class="slice">
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                        </div>
+                        <div class="slice">
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                        </div>
+                        <div class="slice">
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                        </div>
+                        <div class="slice">
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                        </div>
+                        <div class="slice">
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                        </div>
+                        <div class="slice">
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                        </div>
+                        <div class="slice">
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                        </div>
+                        <div class="slice">
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                        </div>
+                        <div class="slice">
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                        </div>
+                        <div class="slice">
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                        </div>
+                        <div class="slice">
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                        </div>
+                        <div class="slice">
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                        </div>
+                        <div class="slice">
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                        </div>
+                        <div class="slice">
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                        </div>
+                        <div class="slice">
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                        </div>
+                        <div class="slice">
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                        </div>
+                        <div class="slice">
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                        </div>
+                        <div class="slice">
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                        </div>
+                        <div class="slice">
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                        </div>
+                        <div class="slice">
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                        </div>
+                        <div class="slice">
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                        </div>
+                        <div class="slice">
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                        </div>
+                        <div class="slice">
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                        </div>
+                        <div class="slice">
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                        </div>
+                        <div class="slice">
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                        </div>
+                        <div class="slice">
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                        </div>
+                        <div class="slice">
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                        </div>
+                        <div class="slice">
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                            <div class="facet"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <nav id="patterns">
+                <label for="grid" title="globe with meridians & parallells"></label>
+                <label for="chess" title="checkerboard pattern"></label>
+            </nav>
+
+            <nav id="fills">
+                <label for="backFace" title="Hide/show backfacey"></label>
+                <label for="ghost" title="Semi-transparency"></label>
+            </nav>
+
+            <label class="startBtn" for="start" title="Press to start spinning the globe"></label>
+            <label class="playBtn" for="playPause" title="Start/pause the animation"></label>
+        </div>
+    </section>
+
+    <!--  Footer  -->
+    <div id="footer">
+        <div class="grid">
+            <div class="social-list">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                <a href=""><i class="fa-brands fa-pinterest"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <p class="coppyright">&#169; Powered by <a href="">H&T blog.me</a></p>
+        </div>
+    </div>
+    <!-- Login form -->
+    <div class="modal" id="modal">
+        <div class="container-form" id="container-form">
+            <div class="avatar_login">
+                <img src="https://i.pinimg.com/564x/8b/da/32/8bda32bf7c626e71a85cc841d4dff1ef.jpg" alt="avatar_login"
+                    class="avatar_login_img" width="400px" height="400px">
+                <p class="avatar_login_p">Discover and share with H&T blog!</p>
+            </div>
+            <form class="form" id="login">
+                <div class="btn-close" onclick="closeForm()">
+                    <i class='bx bx-x-circle'></i>
+                </div>
+                <h1 class="form__title">Login</h1>
+
+                <div class="form__input-group">
+                    <input type="text" class="form__input" id="username" autofocus placeholder="Username or email">
+                </div>
+                <div class="form__input-group">
+                    <input type="password" class="form__input" id="password" autofocus placeholder="Password">
+                </div>
+                <button class="form__button" type="submit" onclick="login()">Continue</button>
+                <p class="form__text">
+                    <a href="#" class="form__link">Forgot your password?</a>
+                </p>
+                <p class="form__text">
+                    <a class="form__link" href="./" id="linkCreateAccount">Don't have an account? Create account</a>
+                </p>
+            </form>
+            <form class="form form--hidden" id="createAccount">
+                <div class="btn-close">
+                    <i class='bx bx-x-circle' onclick="closeForm()"></i>
+                </div>
+                <h1 class="form__title">Create Account</h1>
+                <div class="form__message form__message--error"></div>
+                <div class="form__input-group">
+                    <input type="text" id="signupUsername" class="form__input" autofocus placeholder="Username">
+                    <div class="form__input-error-message"></div>
+                </div>
+                <div class="form__input-group">
+                    <input type="text" class="form__input" autofocus placeholder="Email Address">
+                    <div class="form__input-error-message"></div>
+                </div>
+                <div class="form__input-group">
+                    <input type="password" class="form__input" autofocus placeholder="Password">
+                    <div class="form__input-error-message"></div>
+                </div>
+                <div class="form__input-group">
+                    <input type="password" class="form__input" autofocus placeholder="Confirm password">
+                    <div class="form__input-error-message"></div>
+                </div>
+                <button class="form__button" type="submit">Continue</button>
+                <p class="form__text">
+                    <a class="form__link" href="./" id="linkLogin">Already have an account? Sign in</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="./assets/js/filter.js"></script>
+    <script src="./assets/js/login.js"></script>
+</body>
+
+</html>

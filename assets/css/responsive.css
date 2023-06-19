@@ -1,0 +1,378 @@
+/*  Responsive   */
+@media (max-width:2000px) {
+    body {
+        max-width: 1520px;
+        margin: auto;
+    }
+}
+@media(max-width: 1120px){
+    .container {
+        max-width: 1000px;
+        margin: auto;
+    }
+    .source {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100% !important;
+    }
+    .source-product_html,
+    .source-product-css {
+        width: 50%;
+    }
+
+    .play-product {
+        width: 100% !important;
+    }
+    .globe {
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 1080px) {
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .login {
+        font-size: 0.875rem;
+    }
+
+    .menu-item {
+        font-size: 0.875rem;
+        margin: 15px;
+    }
+
+    #search-box:hover #search-text {
+        font-size: 0.8rem;
+        width: 100px;
+        padding: 10px 0 10px 15px;
+    }
+
+    .container {
+        margin: 0 auto;
+        width: 95%;
+    }
+
+    .home-text {
+        width: 100%;
+    }
+
+    .post-school-text .post-decription {
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+        margin: 5px 0 10px;
+        /*  To remain title in 3 line */
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+   .container_playlist {
+        width: 500px;
+        display: block;
+    }
+     .container_playlist .playlist {
+        width: 400px;
+    }
+
+}
+
+@media (max-width: 980px) {
+   .container_playlist {
+        position: absolute;
+        width: 400px;
+        display: none;
+    }
+    #content_2 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .poster_slogan {
+        width: 500px;
+        height: 500px;
+    }
+    .quotemark {
+        top: 50px;
+    }
+    .source-product_html,
+    .source-product-css {
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .nav {
+        padding: 14px 0;
+    }
+
+    .post-container {
+        margin: 0 auto;
+        width: 95%;
+    }
+   .container_playlist {
+        display: none;
+        width: 400px;
+        position: absolute;
+    }
+    .container-form {
+        width: 400px;
+    }
+    .avatar_login {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    header.shadow .menu-item>a {
+        color: var(--bg-color);
+    }
+
+    .nav ul {
+        position: fixed;
+        width: 300px;
+        height: 100vh;
+        background: var(--second-color);
+        right: 0;
+        top: 0;
+        flex-direction: column;
+        transform: translateX(100%);
+    }
+
+    .nav ul li {
+        margin-bottom: 20px;
+        margin-left: 50px;
+        border-bottom: 1px solid var(--light-color);
+    }
+
+    .nav ul i {
+        display: block;
+    }
+
+    .nav i {
+        display: block;
+    }
+
+    .menu .menu-item:hover>a {
+        color: var(--bg-color);
+        font-size: 1.4rem;
+    }
+
+    .nav {
+        padding: 10px 0;
+    }
+
+    section {
+        padding: 2rem 0;
+    }
+
+    .home-title {
+        font-size: 3rem;
+    }
+
+    .header-title {
+        font-size: 2rem;
+    }
+
+    .header-img {
+        height: 370px;
+    }
+
+    .post-header {
+        height: 435px;
+    }
+
+    .post-content {
+        margin-top: 9rem !important;
+    }
+
+    td {
+        padding: 20px;
+    }
+
+    .member-img {
+        width: 200px;
+    }
+    .container_playlist {
+        display: none;
+        width: 400px;
+        position: absolute;
+    }
+    .scene {
+        font-size: 3px;
+    }
+}
+
+@media (max-width: 580px) {
+    body {
+        max-width: 560px;
+    }
+    header.shadow .menu-item>a {
+        color: var(--bg-color);
+    }
+
+    .nav ul {
+        position: fixed;
+        width: 200px;
+        height: 100vh;
+        background: var(--second-color);
+        right: 0;
+        top: 0;
+        flex-direction: column;
+        transform: translateX(100%);
+    }
+
+    .nav ul li {
+        margin-bottom: 20px;
+        margin-left: 50px;
+        border-bottom: 1px solid var(--light-color);
+    }
+
+    .nav ul i {
+        display: block;
+    }
+
+    .nav i {
+        display: block;
+    }
+
+    .menu .menu-item:hover>a {
+        color: var(--bg-color);
+        font-size: 1.2rem;
+    }
+
+    .post-header {
+        height: 390px;
+    }
+
+    .header-title {
+        width: 100%;
+    }
+
+    .header-img {
+        height: 340px;
+    }
+    #content_2 {
+        height: 300px;
+        margin: 20px 0;
+    }
+    .quotemark {
+        left: 0;
+    }
+    .quotemark svg{
+        height: 15px;
+    }
+    .poster_slogan {
+        width: 300px;
+        height: 300px;
+    }
+    .quote_slogan {
+        width: 100px;
+        font-size: 13px;
+        line-height: 13px;
+    }
+    .footer {
+        flex-direction: column;
+        row-gap: 1rem;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .member-img {
+        width: 150px;
+    }
+
+    .member-intro {
+        font-size: 0.875rem;
+    }
+
+   .container_playlist {
+        display: none;
+        width: 400px;
+        position: absolute;
+    }
+    .scene {
+        font-size: 1.5px;
+        margin-left: 250px !important;
+    }
+}
+
+@media (max-width: 400px) {
+    header.shadow .menu-item>a {
+        color: var(--bg-color);
+    }
+
+    .nav ul {
+        position: fixed;
+        width: 200px;
+        height: 100vh;
+        background: var(--second-color);
+        right: 0;
+        top: 0;
+        flex-direction: column;
+        transform: translateX(100%);
+    }
+
+    .nav ul li {
+        margin-bottom: 20px;
+        margin-left: 50px;
+        border-bottom: 1px solid var(--light-color);
+    }
+
+    .nav ul i {
+        display: block;
+    }
+
+    .nav i {
+        display: block;
+    }
+
+    .home-title {
+        font-size: 2rem;
+    }
+
+    .home-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .home {
+        min-height: 300px;
+    }
+
+    .post-box {
+        padding: 10px;
+    }
+
+    .header-title {
+        font-size: 1.4rem;
+    }
+
+    .header-img {
+        height: 240px;
+    }
+
+    .post-header {
+        height: 355px;
+    }
+
+    .post-container {
+        margin-top: 5rem !important;
+    }
+
+    .post-text {
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+        margin: 10px 0;
+    }
+
+    .member-img {
+        width: 150px;
+    }
+
+   .container_playlist {
+        display: none;
+        width: 400px;
+        position: absolute;
+    }
+    .container-form {
+        width: 300px;
+    }
+}

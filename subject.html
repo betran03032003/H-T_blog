@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Logo -->
+    <link rel="android-chrome-512x512" sizes="512x512" href="./assets/img/Logo/android-chrome-512x512.png">
+    <link rel="android-chrome-192x192" sizes="192x192" href="./assets/img/Logo/android-chrome-192x192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/Logo/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/Logo/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/Logo/favicon-16x16.png">
+    <link rel="manifest" href="./assets/img/Logo/site.webmanifest">
+
+    <title>Subject</title>
+
+    <!-- Link css -->
+    <link rel="stylesheet" href="./assets/css/base.css" class="">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css" class="">
+    <link rel="stylesheet" href="./assets/css/responsive.css" class="">
+    <link rel="stylesheet" href="./assets/css/login.css">
+
+    <!-- Link font -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link js -->
+    <script src="https://use.typekit.net/hoy3lrg.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://use.fontawesome.com/15af25ac7b.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.1/jquery.jcarousel.min.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Nav -->
+        <div class="nav container">
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <img src="./assets/img/Logo//logo.png" alt="" class="logo-img">
+                H<span>&T</span>
+            </a>
+            <!-- Menu -->
+            <ul class="menu">
+                <i class='bx bx-x-circle'></i>
+                <li class="menu-item"><a href="index.html">Home</a></li>
+                <li class="menu-item"><a href="about.html">About</a></li>
+                <li class="menu-item"><a href="university.html">University</a></li>
+                <li class="menu-item"><a href="subject.html">Subject</a>
+                <ul class="subject">
+                    <li class="subject-item"><a href="music.html">Musics</a></li>
+                    <li class="subject-item"><a href="movie.html">Movies</a></li>
+                    <li class="subject-item"><a href="book.html">Books</a></li>
+                    <li class="subject-item"><a href="game.html">Games</a></li>
+                    <li class="subject-item"><a href="artist.html">Artist</a></li>
+                    <li class="subject-item"><a href="pet.html">Pet</a></li>
+                    <li class="subject-item"><a href="learn.html">Learn</a></li>
+                    <li class="subject-item"><a href="product.html">Products</a></li>
+                </ul>
+                </li>
+                <li class="menu-item"><a href="contact.html">Contact</a></li>
+            </ul>
+            <!-- Find -->
+            <form action="" id="search-box">
+                <input type="text" id="search-text" placeholder="Search ..." required>
+                <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <!-- Login Btn-->
+            <div class="login-btn">
+                <button class="login" onclick="openForm()">Login</button>
+            </div>
+            <div class="user-avt">
+                <img src="" alt="" class="avatar">
+                <div class="log-out">
+                    Đăng xuất
+                </div>
+            </div>
+            <i class='bx bx-menu'></i>
+        </div>
+    </header>
+    <!--  Home  -->
+    <section class="home" id="home">
+        <div class="home-text container">
+            <h2 class="home-title">H&T Blog</h2>
+            <span class="home-subtitle">Subject page_A place for featured blog posts and topics.</span>
+        </div>
+    </section>
+    <!--  Post Filter  -->
+    <div class="post-filter container">
+        <span class="filter-item active-filter" data-filter='all'>All</span>
+        <span class="filter-item " data-filter='music'>Music</span>
+        <span class="filter-item " data-filter='game'>Game</span>
+        <span class="filter-item " data-filter='movie'>Movie</span>
+        <span class="filter-item " data-filter='book'>Book</span>
+        <span class="filter-item " data-filter='artist'>Artist</span>
+        <span class="filter-item " data-filter='pet'>Pet</span>
+        <span class="filter-item " data-filter='learn'>Learn</span>
+        <span class="filter-item " data-filter='product'>Product</span>
+    </div>
+    <!-- Posts -->
+    <section class="post container">
+        <!-- Post Box 1-->
+        <div class="post-box artist">
+            <img src="https://i.pinimg.com/564x/e9/86/66/e986664c72e31a63b26f625bae53e5ef.jpg" alt="" class="post-img">
+            <h2 class="category">Artist</h2>
+            <a href="post-page.html" class="post-title">
+                How To Create Best UX music With Adobe XD
+            </a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-decription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia possimus, dicta
+                aspernatur incidunt non aliquam praesentium, soluta pariatur blanditiis, ea rerum nemo accusantium
+                numquam qui?</p>
+            <!--  Profile  -->
+            <div class="profile">
+                <img src="./assets/img/Pictures/profile-1.jpg" alt="" class="profile-img">
+                <span class="profile-name">Huyen Tran</span>
+            </div>
+        </div>
+        <!-- Post Box 2-->
+        <div class="post-box game">
+            <img src="https://i.pinimg.com/564x/49/a9/b1/49a9b1fa5e093ae15a1d421c373b46bb.jpg" alt="" class="post-img">
+            <h2 class="category">Game</h2>
+            <a href="post-page.html" class="post-title">
+                How To Create Best UX music With Adobe XD
+            </a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-decription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia possimus, dicta
+                aspernatur incidunt non aliquam praesentium, soluta pariatur blanditiis, ea rerum nemo accusantium
+                numquam qui?</p>
+            <!--  Profile  -->
+            <div class="profile">
+                <img src="./assets/img/Pictures/profile-2.jpg" alt="" class="profile-img">
+                <span class="profile-name">Huyen Tran</span>
+            </div>
+        </div>
+        <!-- Post Box 3-->
+        <div class="post-box music">
+            <img src="https://i.pinimg.com/564x/f8/76/8b/f8768b861600c80013d462091a02ef4e.jpg" alt="" class="post-img">
+            <h2 class="category">music</h2>
+            <a href="post-page.html" class="post-title">
+                How To Create Best UX music With Adobe XD
+            </a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-decription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia possimus, dicta
+                aspernatur incidunt non aliquam praesentium, soluta pariatur blanditiis, ea rerum nemo accusantium
+                numquam qui?</p>
+            <!--  Profile  -->
+            <div class="profile">
+                <img src="./assets/img/Pictures/profile-3.jpg" alt="" class="profile-img">
+                <span class="profile-name">Huyen Tran</span>
+            </div>
+        </div>
+        <!-- Post Box 4-->
+        <div class="post-box pet">
+            <img src="https://i.pinimg.com/564x/7a/3d/a6/7a3da6ae7b4b34c8de1936fe1f103634.jpg" alt="" class="post-img">
+            <h2 class="category">Pet</h2>
+            <a href="post-page.html" class="post-title">
+                How To Create Best UX music With Adobe XD
+            </a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-decription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia possimus, dicta
+                aspernatur incidunt non aliquam praesentium, soluta pariatur blanditiis, ea rerum nemo accusantium
+                numquam qui?</p>
+            <!--  Profile  -->
+            <div class="profile">
+                <img src="./assets/img/Pictures/profile-1.jpg" alt="" class="profile-img">
+                <span class="profile-name">Huyen Tran</span>
+            </div>
+        </div>
+        <!-- Post Box 5-->
+        <div class="post-box movie">
+            <img src="https://i.pinimg.com/564x/1d/12/9d/1d129deea902efcf7334d3515e6ffdd1.jpg" alt="" class="post-img">
+            <h2 class="category">Movie</h2>
+            <a href="post-page.html" class="post-title">
+                How To Create Best UX music With Adobe XD
+            </a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-decription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia possimus, dicta
+                aspernatur incidunt non aliquam praesentium, soluta pariatur blanditiis, ea rerum nemo accusantium
+                numquam qui?</p>
+            <!--  Profile  -->
+            <div class="profile">
+                <img src="./assets/img/Pictures/profile-2.jpg" alt="" class="profile-img">
+                <span class="profile-name">Huyen Tran</span>
+            </div>
+        </div>
+        <!-- Post Box 6-->
+        <div class="post-box music">
+            <img src="https://i.pinimg.com/564x/67/7a/6e/677a6e621be2b3f13da0b393e837a44c.jpg" alt="" class="post-img">
+            <h2 class="category">music</h2>
+            <a href="post-page.html" class="post-title">
+                How To Create Best UX music With Adobe XD
+            </a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-decription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia possimus, dicta
+                aspernatur incidunt non aliquam praesentium, soluta pariatur blanditiis, ea rerum nemo accusantium
+                numquam qui?</p>
+            <!--  Profile  -->
+            <div class="profile">
+                <img src="./assets/img/Pictures/profile-3.jpg" alt="" class="profile-img">
+                <span class="profile-name">Huyen Tran</span>
+            </div>
+        </div>
+        <!-- Post Box 7-->
+        <div class="post-box learn">
+            <img src="https://i.pinimg.com/736x/1e/fa/f3/1efaf3f4ee2499ceb7c0c36ef805b4dc.jpg" alt="" class="post-img">
+            <h2 class="category">Learn</h2>
+            <a href="post-page.html" class="post-title">
+                How To Create Best UX music With Adobe XD
+            </a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-decription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia possimus, dicta
+                aspernatur incidunt non aliquam praesentium, soluta pariatur blanditiis, ea rerum nemo accusantium
+                numquam qui?</p>
+            <!--  Profile  -->
+            <div class="profile">
+                <img src="./assets/img/Pictures/profile-1.jpg" alt="" class="profile-img">
+                <span class="profile-name">Huyen Tran</span>
+            </div>
+        </div>
+        <!-- Post Box 8-->
+        <div class="post-box artist">
+            <img src="https://i.pinimg.com/564x/8d/4d/1a/8d4d1a3ca4c82f439dac97a19934300c.jpg" alt="" class="post-img">
+            <h2 class="category">Artist</h2>
+            <a href="post-page.html" class="post-title">
+                How To Create Best UX music With Adobe XD
+            </a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-decription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia possimus, dicta
+                aspernatur incidunt non aliquam praesentium, soluta pariatur blanditiis, ea rerum nemo accusantium
+                numquam qui?</p>
+            <!--  Profile  -->
+            <div class="profile">
+                <img src="./assets/img/Pictures/profile-2.jpg" alt="" class="profile-img">
+                <span class="profile-name">Huyen Tran</span>
+            </div>
+        </div>
+        <!-- Post Box 9-->
+        <div class="post-box music">
+            <img src="https://i.pinimg.com/564x/8d/a8/73/8da873a58adef19b79776931bbe4b7d5.jpg" alt="" class="post-img">
+            <h2 class="category">music</h2>
+            <a href="post-page.html" class="post-title">
+                How To Create Best UX music With Adobe XD
+            </a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-decription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia possimus, dicta
+                aspernatur incidunt non aliquam praesentium, soluta pariatur blanditiis, ea rerum nemo accusantium
+                numquam qui?</p>
+            <!--  Profile  -->
+            <div class="profile">
+                <img src="./assets/img/Pictures/profile-3.jpg" alt="" class="profile-img">
+                <span class="profile-name">Huyen Tran</span>
+            </div>
+        </div>
+        <!-- Post Box 10-->
+        <div class="post-box artist">
+            <img src="https://i.pinimg.com/564x/91/e5/87/91e5871e25ba58af3d7a76903f408e1e.jpg" alt="" class="post-img">
+            <h2 class="category">Artist</h2>
+            <a href="post-page.html" class="post-title">
+                How To Create Best UX music With Adobe XD
+            </a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-decription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia possimus, dicta
+                aspernatur incidunt non aliquam praesentium, soluta pariatur blanditiis, ea rerum nemo accusantium
+                numquam qui?</p>
+            <!--  Profile  -->
+            <div class="profile">
+                <img src="./assets/img/Pictures/profile-1.jpg" alt="" class="profile-img">
+                <span class="profile-name">Huyen Tran</span>
+            </div>
+        </div>
+        <!-- Post Box 11-->
+        <div class="post-box book">
+            <img src="https://i.pinimg.com/564x/3b/2d/c4/3b2dc43c1265c5d48949b8682361e59a.jpg" alt="" class="post-img">
+            <h2 class="category">book</h2>
+            <a href="post-page.html" class="post-title">
+                How To Create Best UX music With Adobe XD
+            </a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-decription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia possimus, dicta
+                aspernatur incidunt non aliquam praesentium, soluta pariatur blanditiis, ea rerum nemo accusantium
+                numquam qui?</p>
+            <!--  Profile  -->
+            <div class="profile">
+                <img src="./assets/img/Pictures/profile-2.jpg" alt="" class="profile-img">
+                <span class="profile-name">Huyen Tran</span>
+            </div>
+        </div>
+        <!-- Post Box 12-->
+        <div class="post-box product">
+            <img src="https://i.pinimg.com/564x/9c/ca/ea/9ccaea0e4854ccccf4bb501476417d7c.jpg" alt="" class="post-img">
+            <h2 class="category">product</h2>
+            <a href="post-page.html" class="post-title">
+                How To Create Best UX music With Adobe XD
+            </a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-decription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia possimus, dicta
+                aspernatur incidunt non aliquam praesentium, soluta pariatur blanditiis, ea rerum nemo accusantium
+                numquam qui?</p>
+            <!--  Profile  -->
+            <div class="profile">
+                <img src="./assets/img/Pictures/profile-3.jpg" alt="" class="profile-img">
+                <span class="profile-name">Huyen Tran</span>
+            </div>
+        </div>
+        <!-- Post Box 13-->
+        <div class="post-box pet">
+            <img src="https://i.pinimg.com/564x/9b/4f/91/9b4f91c44f4b6158de7f826bd7e5133f.jpg" alt="" class="post-img">
+            <h2 class="category">Pet</h2>
+            <a href="post-page.html" class="post-title">
+                How To Create Best UX music With Adobe XD
+            </a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-decription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia possimus, dicta
+                aspernatur incidunt non aliquam praesentium, soluta pariatur blanditiis, ea rerum nemo accusantium
+                numquam qui?</p>
+            <!--  Profile  -->
+            <div class="profile">
+                <img src="./assets/img/Pictures/profile-1.jpg" alt="" class="profile-img">
+                <span class="profile-name">Huyen Tran</span>
+            </div>
+        </div>
+        <!-- Post Box 14-->
+        <div class="post-box movie">
+            <img src="https://i.pinimg.com/564x/11/40/6e/11406e740733fe4c7d3aa85b20ddf645.jpg" alt="" class="post-img">
+            <h2 class="category">Movie</h2>
+            <a href="post-page.html" class="post-title">
+                How To Create Best UX music With Adobe XD
+            </a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-decription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia possimus, dicta
+                aspernatur incidunt non aliquam praesentium, soluta pariatur blanditiis, ea rerum nemo accusantium
+                numquam qui?</p>
+            <!--  Profile  -->
+            <div class="profile">
+                <img src="./assets/img/Pictures/profile-2.jpg" alt="" class="profile-img">
+                <span class="profile-name">Huyen Tran</span>
+            </div>
+        </div>
+        <!-- Post Box 15-->
+        <div class="post-box music">
+            <img src="https://i.pinimg.com/564x/3d/ab/90/3dab9014629bceba3f73007b098f7537.jpg" alt="" class="post-img">
+            <h2 class="category">music</h2>
+            <a href="post-page.html" class="post-title">
+                How To Create Best UX music With Adobe XD
+            </a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-decription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia possimus, dicta
+                aspernatur incidunt non aliquam praesentium, soluta pariatur blanditiis, ea rerum nemo accusantium
+                numquam qui?</p>
+            <!--  Profile  -->
+            <div class="profile">
+                <img src="./assets/img/Pictures/profile-3.jpg" alt="" class="profile-img">
+                <span class="profile-name">Huyen Tran</span>
+            </div>
+        </div>
+        <!-- Post Box 16-->
+        <div class="post-box learn">
+            <img src="https://i.pinimg.com/236x/a2/91/5d/a2915d5378b0f85c272a26cbc7c5b80e.jpg" alt="" class="post-img">
+            <h2 class="category">Learn</h2>
+            <a href="post-page.html" class="post-title">
+                How To Create Best UX music With Adobe XD
+            </a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-decription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia possimus, dicta
+                aspernatur incidunt non aliquam praesentium, soluta pariatur blanditiis, ea rerum nemo accusantium
+                numquam qui?</p>
+            <!--  Profile  -->
+            <div class="profile">
+                <img src="./assets/img/Pictures/profile-1.jpg" alt="" class="profile-img">
+                <span class="profile-name">Huyen Tran</span>
+            </div>
+        </div>
+        <!-- Post Box 17-->
+        <div class="post-box product">
+            <img src="https://i.pinimg.com/564x/56/80/ed/5680ed9f4b2487dd78f82e01287cf1ff.jpg" alt="" class="post-img">
+            <h2 class="category">product</h2>
+            <a href="post-page.html" class="post-title">
+                How To Create Best UX music With Adobe XD
+            </a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-decription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia possimus, dicta
+                aspernatur incidunt non aliquam praesentium, soluta pariatur blanditiis, ea rerum nemo accusantium
+                numquam qui?</p>
+            <!--  Profile  -->
+            <div class="profile">
+                <img src="./assets/img/Pictures/profile-2.jpg" alt="" class="profile-img">
+                <span class="profile-name">Huyen Tran</span>
+            </div>
+        </div>
+        <!-- Post Box 18-->
+        <div class="post-box game">
+            <img src="https://i.pinimg.com/564x/e3/4e/11/e34e110618d7413b52def70dc8f373c4.jpg" alt="" class="post-img">
+            <h2 class="category">game</h2>
+            <a href="post-page.html" class="post-title">
+                How To Create Best UX music With Adobe XD
+            </a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-decription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia possimus, dicta
+                aspernatur incidunt non aliquam praesentium, soluta pariatur blanditiis, ea rerum nemo accusantium
+                numquam qui?</p>
+            <!--  Profile  -->
+            <div class="profile">
+                <img src="./assets/img/Pictures/profile-3.jpg" alt="" class="profile-img">
+                <span class="profile-name">Huyen Tran</span>
+            </div>
+        </div>
+    </section>
+    <!--  Footer  -->
+    <div id="footer">
+        <div class="grid">
+            <div class="social-list">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                <a href=""><i class="fa-brands fa-pinterest"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <p class="coppyright">&#169; Powered by <a href="">H&T blog.me</a></p>
+        </div>
+    </div>
+    <!-- Login form -->
+    <div class="modal" id="modal">
+        <div class="container-form" id="container-form">
+            <div class="avatar_login">
+                <img src="https://i.pinimg.com/originals/ce/94/60/ce9460165becab831d23dad9950b69a0.gif" alt="avatar_login"
+                    class="avatar_login_img" width="400px" height="400px">
+                <p class="avatar_login_p">Discover and share with H&T blog!</p>
+            </div>
+            <form class="form" id="login">
+                <div class="btn-close" onclick="closeForm()">
+                    <i class='bx bx-x-circle'></i>
+                </div>
+                <h1 class="form__title">Login</h1>
+    
+                <div class="form__input-group">
+                    <input type="text" class="form__input" id="username" autofocus placeholder="Username or email">
+                </div>
+                <div class="form__input-group">
+                    <input type="password" class="form__input" id="password" autofocus placeholder="Password">
+                </div>
+                <button class="form__button" type="submit" onclick="login()">Continue</button>
+                <p class="form__text">
+                    <a href="#" class="form__link">Forgot your password?</a>
+                </p>
+                <p class="form__text">
+                    <a class="form__link" href="./" id="linkCreateAccount">Don't have an account? Create account</a>
+                </p>
+            </form>
+            <form class="form form--hidden" id="createAccount">
+                <div class="btn-close">
+                    <i class='bx bx-x-circle' onclick="closeForm()"></i>
+                </div>
+                <h1 class="form__title">Create Account</h1>
+                <div class="form__message form__message--error"></div>
+                <div class="form__input-group">
+                    <input type="text" id="signupUsername" class="form__input" autofocus placeholder="Username">
+                    <div class="form__input-error-message"></div>
+                </div>
+                <div class="form__input-group">
+                    <input type="text" class="form__input" autofocus placeholder="Email Address">
+                    <div class="form__input-error-message"></div>
+                </div>
+                <div class="form__input-group">
+                    <input type="password" class="form__input" autofocus placeholder="Password">
+                    <div class="form__input-error-message"></div>
+                </div>
+                <div class="form__input-group">
+                    <input type="password" class="form__input" autofocus placeholder="Confirm password">
+                    <div class="form__input-error-message"></div>
+                </div>
+                <button class="form__button" type="submit">Continue</button>
+                <p class="form__text">
+                    <a class="form__link" href="./" id="linkLogin">Already have an account? Sign in</a>
+                </p>
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="./assets/js/filter.js"></script>
+    <script src="./assets/js/login.js"></script>
+</body>
+
+</html>

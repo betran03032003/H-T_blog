@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    box-sizing: border-box;
+}
+
+:root {
+    --container-color: #B4B9F3;
+    --primary-color: #5AB9EA;
+    --second-color: #5680E9;
+    --text-color: #8860D0;
+    --white-color: #ffff;
+    --black-color: #000000;
+    --bg-color: #C1C8E4;
+    --third-color: rgba(219,226,244, 0.9);
+    --light-color: rgba(132,206,235, 0.9);
+}
+
+::selection {
+    color: var(--bg-color);
+    background: var(--second-color);
+}
+
+.blue {
+    color: var(--second-color);
+    text-shadow: 0 0 4px rgba(221, 111, 240, 0.9);
+    transition: all 1s ease;
+}
+
+/* Placeholder css color */
+::-ms-input-placeholder {
+    color: white;
+    /* Microsoft Edge */
+}
+
+::placeholder {
+    color: white;
+    /* Firefox, Chrome, Opera */
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes growth {
+    from {
+        transform: scale(var(--growth-from));
+    }
+
+    to {
+        transform: scale(var(--growth-to));
+    }
+}
+
+/* Selection */
+.select-input {
+    position: relative;
+    min-width: 200px;
+    height: 34px;
+    padding: 0 12px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.select-input__label {
+    font-size: 1.4rem;
+}
+
+.select-input__icon {
+    font-size: 1.4rem;
+    color: rgb(131, 131, 131);
+    position: relative;
+    top: 1px;
+}
+
+.select-input:hover .select-input__list {
+    display: block;
+}
+
+.select-input__list {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25px;
+    padding: 8px 16px;
+    list-style: none;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    display: none;
+}
+
+.select-input__link {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    text-decoration: none;
+    display: block;
+    padding: 4px 0;
+}
+
+.select-input__link:hover {
+    color: var(--primary-color);
+}

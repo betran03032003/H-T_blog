@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Logo -->
+    <link rel="android-chrome-512x512" sizes="512x512" href="./assets/img/Logo/android-chrome-512x512.png">
+    <link rel="android-chrome-192x192" sizes="192x192" href="./assets/img/Logo/android-chrome-192x192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/Logo/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/Logo/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/Logo/favicon-16x16.png">
+    <link rel="manifest" href="./assets/img/Logo/site.webmanifest">
+
+    <title>H&T Blog</title>
+
+    <!-- Link css -->
+    <link rel="stylesheet" href="./assets/css/base.css" class="">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css" class="">
+    <link rel="stylesheet" href="./assets/css/login.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css" class="">
+
+    <!-- Link font -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link js -->
+    <script src="https://use.typekit.net/hoy3lrg.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://use.fontawesome.com/15af25ac7b.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.1/jquery.jcarousel.min.js"></script>
+
+    <!-- CSS inline background -->
+    <style class="">
+        #home {
+            background-color: hsla(200,40%,30%,.4);
+            background-image:   
+                url('https://78.media.tumblr.com/cae86e76225a25b17332dfc9cf8b1121/tumblr_p7n8kqHMuD1uy4lhuo1_540.png'), 
+                url('https://78.media.tumblr.com/66445d34fe560351d474af69ef3f2fb0/tumblr_p7n908E1Jb1uy4lhuo1_1280.png'),
+                url('https://78.media.tumblr.com/8cd0a12b7d9d5ba2c7d26f42c25de99f/tumblr_p7n8kqHMuD1uy4lhuo2_1280.png'),
+                url('https://78.media.tumblr.com/5ecb41b654f4e8878f59445b948ede50/tumblr_p7n8on19cV1uy4lhuo1_1280.png');
+                /* url('https://78.media.tumblr.com/28bd9a2522fbf8981d680317ccbf4282/tumblr_p7n8kqHMuD1uy4lhuo3_1280.png'); */
+            background-repeat: repeat-x;
+            background-position: 
+                0 20%,
+                0 100%,
+                0 50%,
+                0 100%;
+                /* 0 0; */
+            background-size: 
+                2500px,
+                800px,
+                500px 200px,
+                1000px;
+                /* 400px 260px; */
+            animation: 40s para infinite linear;
+        }
+
+        @keyframes para {
+        100% {
+            background-position: 
+            -5000px 20%,
+            -800px 95%,
+            500px 50%,
+            1000px 100%;
+            /* 400px 0; */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Nav -->
+        <div class="nav container">
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <img src="./assets/img/Logo//logo.png" alt="" class="logo-img">
+                H<span>&T</span>
+            </a>
+            <!-- Menu -->
+            <ul class="menu">
+                <i class='bx bx-x-circle'></i>
+                <li class="menu-item"><a href="index.html">Home</a></li>
+                <li class="menu-item"><a href="about.html">About</a></li>
+                <li class="menu-item"><a href="university.html">University</a></li>
+                <li class="menu-item"><a href="subject.html">Subject</a>
+                    <ul class="subject">
+                        <li class="subject-item"><a href="music.html">Musics</a></li>
+                        <li class="subject-item"><a href="movie.html">Movies</a></li>
+                        <li class="subject-item"><a href="book.html">Books</a></li>
+                        <li class="subject-item"><a href="game.html">Games</a></li>
+                        <li class="subject-item"><a href="artist.html">Artist</a></li>
+                        <li class="subject-item"><a href="pet.html">Pet</a></li>
+                        <li class="subject-item"><a href="learn.html">Learn</a></li>
+                        <li class="subject-item"><a href="product.html">Products</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item"><a href="contact.html">Contact</a></li>
+            </ul>
+            <!-- Find -->
+            <form action="" id="search-box">
+                <input type="text" id="search-text" placeholder="Search ..." required>
+                <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <!-- Login Btn-->
+            <div class="login-btn">
+                <button class="login" onclick="openForm()">Login</button>
+            </div>
+            <div class="user-avt">
+                <img src="" alt="" class="avatar">
+                <div class="log-out">
+                    Đăng xuất
+                </div>
+            </div>
+            <i class='bx bx-menu'></i>
+        </div>
+    </header>
+    <!--  Home  -->
+    <section class="home" id="home">
+        <div class="home-text container">
+            <h2 class="home-title">H&T Blog</h2>
+            <span class="home-subtitle">You are the world and the world is you.</span>
+        </div>
+        <!-- Bubble chat-->
+        <a href="./contact.html" class="bubble_chat">
+            <div class="Footer_quote">
+                <img class="Logo_quote" src='https://i.pinimg.com/564x/eb/57/6f/eb576ff023487bcb1fa3ad61ee7b23ee.jpg'
+                    alt="Breaking Quotes" />
+                <span class="Me" target="_top">Huong&Tran Blog</span>
+                <div class="box_chat">Chat with me 😘</div>
+            </div>
+        </a>
+    </section>
+
+    <!-- Content -->
+    <section class="container">
+        <div id="content">
+            <!-- Intro content -->
+            <div id="intro" class="content-item">
+                <h2 class="section-heading">THE H&T BLOG</h2>
+                <p class="section-sub-heading">Where we enjoy everything!</p>
+                <p class="about-text">
+                    Welcome everyone to visit and stop at H&T blog. We are Nguyen Lan Huong and Do Ngoc Huyen Tran - the owners of this cute blog. 
+                    H&T stands for Huong and Tran, in addition, it also has another meaning: "House technological" or "Happy technology". 
+                    H&T blog is like a special diary of the two of us, it keeps our typical activities at Tay Nguyen University. The
+                    place to share knowledge as well as hobbies of Huong and Tran. We write about my study, daily life, hobbies,....
+                    Therefore, you can discover many interesting things about us here.
+                    What's more, you can also become a member and start contributing and building with us to create an ever more
+                    magical H&T blog.
+                </p>
+            </div>
+
+            <!-- Video -->
+            <!-- <video width="500" height="400" controls>
+                <source src="./assets/video/H&T introduce.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video> -->
+        
+            <!-- Content quote -->
+            <div id="content_quote" class="content_item">
+                <div class="poster_slogan">
+                    <div class="quotemark">
+                        <svg viewBox="0 0 349.078 349.078">
+                            <path
+                                d="M150.299 26.634v58.25c0 7.9-6.404 14.301-14.304 14.301-28.186 0-43.518 28.909-45.643 85.966h45.643c7.9 0 14.304 6.407 14.304 14.304v122.992c0 7.896-6.404 14.298-14.304 14.298H14.301C6.398 336.745 0 330.338 0 322.447V199.455c0-27.352 2.754-52.452 8.183-74.611 5.568-22.721 14.115-42.587 25.396-59.048 11.608-16.917 26.128-30.192 43.16-39.44C93.886 17.052 113.826 12.333 136 12.333c7.895 0 14.299 6.401 14.299 14.301zm184.474 72.552c7.896 0 14.305-6.407 14.305-14.301v-58.25c0-7.9-6.408-14.301-14.305-14.301-22.165 0-42.108 4.72-59.249 14.023-17.035 9.248-31.563 22.523-43.173 39.44-11.277 16.461-19.824 36.328-25.393 59.054-5.426 22.166-8.18 47.266-8.18 74.605v122.992c0 7.896 6.406 14.298 14.304 14.298h121.69c7.896 0 14.299-6.407 14.299-14.298V199.455c0-7.896-6.402-14.304-14.299-14.304H289.78c2.093-57.056 17.201-85.965 44.993-85.965z" />
+                        </svg>
+                    </div>
+                    <div class="quote_slogan">
+                        Where the sky is filled with thoughts. Listen. Think. Read and feel with H&T blog.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Posts -->
+            <section class="post container">
+                <!-- Post Box 1-->
+                <div class="post-box artist">
+                    <img src="https://i.pinimg.com/236x/5a/0f/7f/5a0f7f43377b93c590c135b642d466fa.jpg" alt="" class="post-img">
+                    <h2 class="category">Artist</h2>
+                    <a href="post-page.html" class="post-title">
+                        How To Create Best UX music With Adobe XD
+                    </a>
+                    <span class="post-date">12 Feb 2022</span>
+                    <p class="post-decription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia possimus, dicta
+                        aspernatur incidunt non aliquam praesentium, soluta pariatur blanditiis, ea rerum nemo accusantium
+                        numquam qui?</p>
+                    <!--  Profile  -->
+                    <div class="profile">
+                        <img src="./assets/img/Pictures/profile-1.jpg" alt="" class="profile-img">
+                        <span class="profile-name">Huyen Tran</span>
+                    </div>
+                </div>
+                <!-- Post Box 2-->
+                <div class="post-box game">
+                    <img src="https://i.pinimg.com/564x/cb/3a/08/cb3a08ba770824bbb7904007c1cbadc0.jpg" alt="" class="post-img">
+                    <h2 class="category">Game</h2>
+                    <a href="post-page.html" class="post-title">
+                        How To Create Best UX music With Adobe XD
+                    </a>
+                    <span class="post-date">12 Feb 2022</span>
+                    <p class="post-decription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia possimus, dicta
+                        aspernatur incidunt non aliquam praesentium, soluta pariatur blanditiis, ea rerum nemo accusantium
+                        numquam qui?</p>
+                    <!--  Profile  -->
+                    <div class="profile">
+                        <img src="./assets/img/Pictures/profile-2.jpg" alt="" class="profile-img">
+                        <span class="profile-name">Huyen Tran</span>
+                    </div>
+                </div>
+                <!-- Post Box 3-->
+                <div class="post-box music">
+                    <img src="https://i.pinimg.com/564x/32/91/1f/32911fae6dc4efd707907ae6c222e9b8.jpg" alt="" class="post-img">
+                    <h2 class="category">music</h2>
+                    <a href="post-page.html" class="post-title">
+                        How To Create Best UX music With Adobe XD
+                    </a>
+                    <span class="post-date">12 Feb 2022</span>
+                    <p class="post-decription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia possimus, dicta
+                        aspernatur incidunt non aliquam praesentium, soluta pariatur blanditiis, ea rerum nemo accusantium
+                        numquam qui?</p>
+                    <!--  Profile  -->
+                    <div class="profile">
+                        <img src="./assets/img/Pictures/profile-3.jpg" alt="" class="profile-img">
+                        <span class="profile-name">Huyen Tran</span>
+                    </div>
+                </div>
+                <!-- Post Box 4-->
+                <div class="post-box pet">
+                    <img src="https://i.pinimg.com/564x/88/2e/d6/882ed66ecf16c10ba957503eeed3efa2.jpg" alt="" class="post-img">
+                    <h2 class="category">Pet</h2>
+                    <a href="post-page.html" class="post-title">
+                        How To Create Best UX music With Adobe XD
+                    </a>
+                    <span class="post-date">12 Feb 2022</span>
+                    <p class="post-decription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia possimus, dicta
+                        aspernatur incidunt non aliquam praesentium, soluta pariatur blanditiis, ea rerum nemo accusantium
+                        numquam qui?</p>
+                    <!--  Profile  -->
+                    <div class="profile">
+                        <img src="./assets/img/Pictures/profile-1.jpg" alt="" class="profile-img">
+                        <span class="profile-name">Huyen Tran</span>
+                    </div>
+                </div>
+                <!-- Post Box 5-->
+                <div class="post-box movie">
+                    <img src="https://i.pinimg.com/564x/a1/cf/09/a1cf09c3c6886ba090a132b09380a35b.jpg" alt="" class="post-img">
+                    <h2 class="category">Movie</h2>
+                    <a href="post-page.html" class="post-title">
+                        How To Create Best UX music With Adobe XD
+                    </a>
+                    <span class="post-date">12 Feb 2022</span>
+                    <p class="post-decription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia possimus, dicta
+                        aspernatur incidunt non aliquam praesentium, soluta pariatur blanditiis, ea rerum nemo accusantium
+                        numquam qui?</p>
+                    <!--  Profile  -->
+                    <div class="profile">
+                        <img src="./assets/img/Pictures/profile-2.jpg" alt="" class="profile-img">
+                        <span class="profile-name">Huyen Tran</span>
+                    </div>
+                </div>
+                <!-- Post Box 6-->
+                <div class="post-box music">
+                    <img src="https://i.pinimg.com/564x/fc/75/5f/fc755fbfdfefeb445b08856b52d396ed.jpg" alt="" class="post-img">
+                    <h2 class="category">music</h2>
+                    <a href="post-page.html" class="post-title">
+                        How To Create Best UX music With Adobe XD
+                    </a>
+                    <span class="post-date">12 Feb 2022</span>
+                    <p class="post-decription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia possimus, dicta
+                        aspernatur incidunt non aliquam praesentium, soluta pariatur blanditiis, ea rerum nemo accusantium
+                        numquam qui?</p>
+                    <!--  Profile  -->
+                    <div class="profile">
+                        <img src="./assets/img/Pictures/profile-3.jpg" alt="" class="profile-img">
+                        <span class="profile-name">Huyen Tran</span>
+                    </div>
+                </div>
+            </section>
+        
+            <!-- Begin: Contact content -->
+            <div id="contact" class="content-section">
+                <h2 class="section-heading">CONTACT</h2>
+                <p class="section-sub-heading">Contact us for anything if you want! 😆</p>
+        
+                <div class="row contact-content">
+                    <div class="col contact-info">
+                        <p><i class="fa-sharp fa-solid fa-location-dot"></i>Buon Ma Thuot, Dak Lak</p>
+                        <p><i class="fa-solid fa-mobile-screen-button"></i>Phone:<a href="tel:+00 151515"> +00 151515</a></p>
+                        <p><i class="fa-solid fa-envelope"></i>Email: <a href="mailto:mail@mail.com">mail@mail.com</a></p>
+                    </div>
+                    <div class="col contact-form">
+                        <form action="meoomimi.03@gmail.com">
+                            <div class="row contact-form_box">
+                                <div class="col contact-form_box-item">
+                                    <input type="text" name="" placeholder="Name" required id="contact-name" placeholder=""
+                                        class="form-control">
+                                </div>
+                                <div class="col">
+                                    <input type="email" name="" placeholder="Email" required id="contact-email" placeholder=""
+                                        class="form-control">
+                                </div>
+                            </div>
+                            <div class="row contact-form_box">
+                                <div class="col contact-form_box-item">
+                                    <input style="width: 424px;" type="text" name="" placeholder="Message" required id="contact-message"
+                                        placeholder=" " class="form-control">
+                                </div>
+                            </div>
+                            <div class="btn-send_container">
+                               <button class="btn-send">send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- End: Contact section -->
+
+            <!-- Start Chat Widget -->
+            
+            <!-- End Chat Widget -->
+        </div>
+    </section>
+
+    <!--  Footer  -->
+    <div id="footer">
+        <div class="grid">
+            <div class="social-list">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                <a href=""><i class="fa-brands fa-pinterest"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <p class="coppyright">&#169; Powered by <a href="">H&T blog.me</a></p>
+        </div>
+    </div>
+    <!-- Login form -->
+<div class="modal" id="modal">
+    <div class="container-form" id="container-form">
+        <div class="avatar_login">
+            <img src="https://i.pinimg.com/564x/8b/da/32/8bda32bf7c626e71a85cc841d4dff1ef.jpg" alt="avatar_login"
+                class="avatar_login_img" width="400px" height="400px">
+            <p class="avatar_login_p">Discover and share with H&T blog!</p>
+        </div>
+        <form class="form" id="login">
+            <div class="btn-close" onclick="closeForm()">
+                <i class='bx bx-x-circle'></i>
+            </div>
+            <h1 class="form__title">Login</h1>
+
+            <div class="form__input-group">
+                <input type="text" class="form__input" id="username" autofocus placeholder="Username or email">
+            </div>
+            <div class="form__input-group">
+                <input type="password" class="form__input" id="password" autofocus placeholder="Password">
+            </div>
+            <button class="form__button" type="submit" onclick="login()">Continue</button>
+            <p class="form__text">
+                <a href="#" class="form__link">Forgot your password?</a>
+            </p>
+            <p class="form__text">
+                <a class="form__link" href="./" id="linkCreateAccount">Don't have an account? Create account</a>
+            </p>
+        </form>
+        <form class="form form--hidden" id="createAccount">
+            <div class="btn-close">
+                <i class='bx bx-x-circle' onclick="closeForm()"></i>
+            </div>
+            <h1 class="form__title">Create Account</h1>
+            <div class="form__message form__message--error"></div>
+            <div class="form__input-group">
+                <input type="text" id="signupUsername" class="form__input" autofocus placeholder="Username">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="text" class="form__input" autofocus placeholder="Email Address">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" class="form__input" autofocus placeholder="Password">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" class="form__input" autofocus placeholder="Confirm password">
+                <div class="form__input-error-message"></div>
+            </div>
+            <button class="form__button" type="submit">Continue</button>
+            <p class="form__text">
+                <a class="form__link" href="./" id="linkLogin">Already have an account? Sign in</a>
+            </p>
+        </form>
+    </div>
+</div>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="./assets/js/filter.js"></script>
+    <script src="./assets/js/login.js"></script>
+</body>
+
+</html>
